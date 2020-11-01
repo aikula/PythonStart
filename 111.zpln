@@ -1,0 +1,919 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Lambda функции\n\nЛябмда-выражения — это особый синтаксис в Python, необходимый для создания анонимных функций. Давайте назовем синтаксис лямбда как лямбда-выражение, а получаемую функцию — лямбда-функцию.\n\nЛямбда-выражения в Python позволяют функции быть созданной и переданной (зачастую другой функции) в одной строчке кода.\n\nНапример, простая функция так:",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:54+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Lambda функции</h1>\n<p>Лябмда-выражения — это особый синтаксис в Python, необходимый для создания анонимных функций. Давайте назовем синтаксис лямбда как лямбда-выражение, а получаемую функцию — лямбда-функцию.</p>\n<p>Лямбда-выражения в Python позволяют функции быть созданной и переданной (зачастую другой функции) в одной строчке кода.</p>\n<p>Например, простая функция так:</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249096_1967207328",
+      "id": "20201101-191048_1181240697",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:371"
+    },
+    {
+      "text": "%python\n#объявим функцию\ndef d100(x,y):\n    return x/y\n\n#вызовем функцию\nd100(1000,10)",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_1925893837",
+      "id": "20201101-191049_1220266397",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:372"
+    },
+    {
+      "text": "%md\nА можно объявить ее и в одну строчку, причем, часто нет необходимости присваивать ее переменной.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>А можно объявить ее и в одну строчку, причем, часто нет необходимости присваивать ее переменной.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_1873068036",
+      "id": "20201101-191049_612634176",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:373"
+    },
+    {
+      "text": "%python\nf= lambda x,y: x/y\nf(1000,100)",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_534703329",
+      "id": "20201101-191049_679286541",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:374"
+    },
+    {
+      "text": "%md\nАнонимные функции (labmbda) используют как аргумент нескольких функций - map(), filter(), reduce(), apply().",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Анонимные функции (labmbda) используют как аргумент нескольких функций - map(), filter(), reduce(), apply().</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_2061631435",
+      "id": "20201101-191049_548421095",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:375"
+    },
+    {
+      "text": "%md\n# Map, filter, reduce\n\nРазберемся с функцией map(). Она применяется к спискам и может принимать в качестве аргумента другие функции. В частности, она применяет функцию, переданную в качестве аргумента ко всем последовательно элементам списка.\n\nСгенерируем список my_arr.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Map, filter, reduce</h1>\n<p>Разберемся с функцией map(). Она применяется к спискам и может принимать в качестве аргумента другие функции. В частности, она применяет функцию, переданную в качестве аргумента ко всем последовательно элементам списка.</p>\n<p>Сгенерируем список my_arr.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_646799080",
+      "id": "20201101-191049_919727949",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:376"
+    },
+    {
+      "text": "%python\nmy_arr=[x for x in range(0,100,10)]\nmy_arr",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_1841865284",
+      "id": "20201101-191049_841155033",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:377"
+    },
+    {
+      "text": "%md\nРазделим каждый элемент списка на 100. Для этого можно было \"пройтись\" циклом и перебрать все элементы. А можно использовать функции map() и анонимную функцию lambda.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Разделим каждый элемент списка на 100. Для этого можно было &ldquo;пройтись&rdquo; циклом и перебрать все элементы. А можно использовать функции map() и анонимную функцию lambda.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249097_1144390775",
+      "id": "20201101-191049_1915137519",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:378"
+    },
+    {
+      "text": "%python\nlist(map(lambda x: x/100, my_arr))",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1176225911",
+      "id": "20201101-191049_130261634",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:379"
+    },
+    {
+      "text": "%md\nЕсть еще пара функций, которые в качестве аргументов могут принимать другую функцию. Аналогичным образом можно отсортировать элементы в списке, где условием может быть некторая функция.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Есть еще пара функций, которые в качестве аргументов могут принимать другую функцию. Аналогичным образом можно отсортировать элементы в списке, где условием может быть некторая функция.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1262558775",
+      "id": "20201101-191049_331678082",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:380"
+    },
+    {
+      "text": "%python\nlist(filter(lambda x: x > 50 and x!=70, my_arr))  ",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1620175861",
+      "id": "20201101-191049_793524493",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:381"
+    },
+    {
+      "text": "%md\nИногда полезной может быть функция, которая использует результаты предыдущих вычислений. Она входит в библиотеку functools. Где res - это результат предыдущих вычислений.\n\nНиже мы найдем сумму всех элементов списка.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Иногда полезной может быть функция, которая использует результаты предыдущих вычислений. Она входит в библиотеку functools. Где res - это результат предыдущих вычислений.</p>\n<p>Ниже мы найдем сумму всех элементов списка.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_379604986",
+      "id": "20201101-191049_102591099",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:382"
+    },
+    {
+      "text": "%python\nfrom functools import reduce\nreduce(lambda res, x: res+x, my_arr, 0)",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_965960159",
+      "id": "20201101-191049_483401608",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:383"
+    },
+    {
+      "text": "%md\n## Задание\nНиже сгенерирован список из случайных целых числе. Прибавте к каждому элементу 1 с использованием map().\nЗатем выведите только элементы, которые меньше или равны 30.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Задание</h2>\n<p>Ниже сгенерирован список из случайных целых числе. Прибавте к каждому элементу 1 с использованием map().<br/>Затем выведите только элементы, которые меньше или равны 30.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_836547800",
+      "id": "20201101-191049_656594049",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:384"
+    },
+    {
+      "text": "%python\nfrom random import randint\nt_arr=[randint(0,100) for x in range(0,20)]\nt_arr",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1307917145",
+      "id": "20201101-191049_1768428857",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:385"
+    },
+    {
+      "text": "%md\n# Apply()\nЧуть раньше мы проходили с вами библиотеку pandas и таблицы DataFrame. Для работы с этим типом данных вместо map() используется функция apply(). Функции и принципи работы тот же самый, но есть небольшие дополнения.\n\n\nФайл с примером можно скачать по ссылке https://www.dropbox.com/s/521pocpxhni3py1/topcompany.xlsx?dl=0\n\nЗагрузим библиотеку и файл с данными.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Apply()</h1>\n<p>Чуть раньше мы проходили с вами библиотеку pandas и таблицы DataFrame. Для работы с этим типом данных вместо map() используется функция apply(). Функции и принципи работы тот же самый, но есть небольшие дополнения.</p>\n<p>Файл с примером можно скачать по ссылке <a href=\"https://www.dropbox.com/s/521pocpxhni3py1/topcompany.xlsx?dl=0\">https://www.dropbox.com/s/521pocpxhni3py1/topcompany.xlsx?dl=0</a></p>\n<p>Загрузим библиотеку и файл с данными.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1495911961",
+      "id": "20201101-191049_72082653",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:386"
+    },
+    {
+      "text": "%python\nimport pandas as pd",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1355257417",
+      "id": "20201101-191049_1536341721",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:387"
+    },
+    {
+      "text": "%python\ndf=pd.read_excel('topcompany.xlsx', sheet_name='Лист1')\ndf.head()",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_2092790085",
+      "id": "20201101-191049_529655207",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:388"
+    },
+    {
+      "text": "%md\nФункцию apply() можно применять как к стоблцу, так и по строкам. Примени ее к столбцу, умножим все значения на 1000.",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Функцию apply() можно применять как к стоблцу, так и по строкам. Примени ее к столбцу, умножим все значения на 1000.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_2076012193",
+      "id": "20201101-191049_1348770498",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:389"
+    },
+    {
+      "text": "%python\ndf['Revenue']=df['Revenue'].apply(lambda x: x*1000)\ndf.head()",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_871445656",
+      "id": "20201101-191049_1985887221",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:390"
+    },
+    {
+      "text": "%md\nApply() можно вызывать и к строке, обращаясь затем к элементам строки по номеру или названии. Для этого надо указать параметр axis=1.\n\nНиже мы перемножаем два столбца между собой. ",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Apply() можно вызывать и к строке, обращаясь затем к элементам строки по номеру или названии. Для этого надо указать параметр axis=1.</p>\n<p>Ниже мы перемножаем два столбца между собой. </p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_8136121",
+      "id": "20201101-191049_942960537",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:391"
+    },
+    {
+      "text": "%python\ndf['Labor']=df.apply(lambda x:x['Revenue']/x['Personal'], axis=1)\ndf.head()",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249098_1081645621",
+      "id": "20201101-191049_672664037",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:392"
+    },
+    {
+      "text": "%md\n## Задание\nНиже есть DataFrame.\nВычтите из всех элементов значений столбца A 10.\nРазделите столбец B на столбец C.\nДля операций используйте apple()",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Задание</h2>\n<p>Ниже есть DataFrame.<br/>Вычтите из всех элементов значений столбца A 10.<br/>Разделите столбец B на столбец C.<br/>Для операций используйте apple()</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249099_889901210",
+      "id": "20201101-191049_1549673646",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:393"
+    },
+    {
+      "text": "%python\ndf_t=pd.DataFrame({\n    'A':[96, 66, 98, 60, 13, 55, 2, 40, 18, 93],\n    'B':[541, 80, 654, 365, 190, 448, 187, 731, 883, 411],\n    'C':[9, 6, 0, 9, 8, 7, 6, 1, 10, 1]\n})\ndf_t",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249099_169189909",
+      "id": "20201101-191049_1532509507",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:394"
+    },
+    {
+      "text": "%python\n",
+      "user": "admin",
+      "dateUpdated": "2020-11-01T19:10:49+0100",
+      "config": {
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1604254249099_278025633",
+      "id": "20201101-191049_1082902806",
+      "dateCreated": "2020-11-01T19:10:49+0100",
+      "status": "READY",
+      "$$hashKey": "object:395"
+    }
+  ],
+  "name": "111",
+  "id": "2FQV9D26B",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview2",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/111"
+}
